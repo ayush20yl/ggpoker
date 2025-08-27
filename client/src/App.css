@@ -1,0 +1,157 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4ade80;
+}
+
+.connection-status {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.connection-status.connected {
+  background: rgba(74, 222, 128, 0.2);
+  border: 1px solid #4ade80;
+}
+
+.connection-status.disconnected {
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid #ef4444;
+}
+
+.join-screen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.join-form {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.join-form h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #4ade80;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #e5e7eb;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4ade80;
+  box-shadow: 0 0 0 2px rgba(74, 222, 128, 0.2);
+}
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.btn {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 1rem;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: #4ade80;
+  color: #1a1a2e;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #22c55e;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #4ade80;
+  border: 1px solid #4ade80;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: rgba(74, 222, 128, 0.1);
+  transform: translateY(-1px);
+}
+
+.divider {
+  text-align: center;
+  margin: 1.5rem 0;
+  position: relative;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.divider span {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  position: relative;
+}
