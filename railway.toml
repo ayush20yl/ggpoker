@@ -1,6 +1,6 @@
 [build]
 builder = "NIXPACKS"
-buildCommand = "cd server && npm install --omit=dev && npm run build"
+buildCommand = "cd server && npm install --omit=dev && npx tsc"
 
 [deploy]
 startCommand = "npm start"
