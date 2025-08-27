@@ -19,8 +19,7 @@
     "lint": "npm run lint:client && npm run lint:server",
     "lint:client": "cd client && npm run lint",
     "lint:server": "cd server && npm run lint",
-    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
-    "postinstall": "npm run install:all"
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
