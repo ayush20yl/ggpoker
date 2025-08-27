@@ -120,7 +120,6 @@ function App() {
         socket={socket}
         room={currentRoom}
         playerSeat={playerSeat}
-        playerName={playerName}
         onLeaveRoom={handleLeaveRoom}
       />
     )

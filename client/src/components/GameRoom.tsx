@@ -65,11 +65,10 @@ interface GameRoomProps {
   socket: Socket;
   room: Room;
   playerSeat: number;
-  playerName: string;
   onLeaveRoom: () => void;
 }
 
-export default function GameRoom({ socket, room, playerSeat, playerName, onLeaveRoom }: GameRoomProps) {
+export default function GameRoom({ socket, room, playerSeat, onLeaveRoom }: GameRoomProps) {
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([]);
   const [chatInput, setChatInput] = useState('');
   const [currentRoom, setCurrentRoom] = useState<Room>(room);
