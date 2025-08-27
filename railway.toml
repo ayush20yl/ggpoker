@@ -1,6 +1,6 @@
 [build]
 builder = "NIXPACKS"
-buildCommand = "cd server && npm install && npx --yes typescript@latest tsc"
+buildCommand = "cd server && npm install && npm run build"
 
 [deploy]
 startCommand = "npm start"
